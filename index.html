@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Colorful Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #f6d365, #fda085);
+            color: #333;
+            animation: gradientAnimation 6s infinite alternate;
+        }
+
+        @keyframes gradientAnimation {
+            0% { background: linear-gradient(120deg, #f6d365, #fda085); }
+            50% { background: linear-gradient(120deg, #a18cd1, #fbc2eb); }
+            100% { background: linear-gradient(120deg, #84fab0, #8fd3f4); }
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            animation: textGlow 2s infinite alternate;
+        }
+
+        @keyframes textGlow {
+            0% { text-shadow: 0 0 10px #fff, 0 0 20px #fda085; }
+            100% { text-shadow: 0 0 20px #fff, 0 0 30px #84fab0; }
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background: #fff;
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        nav a:hover {
+            background: #fbc2eb;
+            transform: scale(1.1);
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card {
+            display: inline-block;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background: rgba(255, 255, 255, 0.8);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Dynamic Website</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <div class="card">
+            <p>We are a dynamic company providing the best services for our clients.</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="card">
+            <p>Web Development</p>
+        </div>
+        <div class="card">
+            <p>Graphic Design</p>
+        </div>
+        <div class="card">
+            <p>Digital Marketing</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="card">
+            <p>Email: contact@dynamicwebsite.com</p>
+            <p>Phone: +123 456 7890</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Dynamic Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
